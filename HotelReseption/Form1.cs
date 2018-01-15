@@ -16,5 +16,19 @@ namespace HotelReseption
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(username.Text == "admin" && parol.Text == "123456")
+            {
+                Form2 reseption = new Form2();
+                reseption.ShowDialog();
+            }
+            else
+            {
+                elsems.Text = "Your username or password incorrect";
+            }
+        }
+        
     }
 }
