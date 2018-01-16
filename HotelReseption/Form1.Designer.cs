@@ -39,7 +39,7 @@
             // 
             // parol
             // 
-            this.parol.Location = new System.Drawing.Point(501, 85);
+            this.parol.Location = new System.Drawing.Point(555, 75);
             this.parol.Name = "parol";
             this.parol.Size = new System.Drawing.Size(122, 20);
             this.parol.TabIndex = 0;
@@ -47,12 +47,13 @@
             // 
             // login
             // 
-            this.login.BackColor = System.Drawing.Color.Snow;
+            this.login.BackColor = System.Drawing.SystemColors.MenuBar;
             this.login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(603, 130);
+            this.login.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.login.Location = new System.Drawing.Point(653, 117);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(75, 26);
+            this.login.Size = new System.Drawing.Size(66, 27);
             this.login.TabIndex = 1;
             this.login.Text = "Login ";
             this.login.UseVisualStyleBackColor = false;
@@ -60,7 +61,7 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(501, 47);
+            this.username.Location = new System.Drawing.Point(555, 37);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(122, 20);
             this.username.TabIndex = 0;
@@ -71,7 +72,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(404, 47);
+            this.label1.Location = new System.Drawing.Point(458, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 17);
             this.label1.TabIndex = 2;
@@ -83,7 +84,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(406, 85);
+            this.label2.Location = new System.Drawing.Point(460, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 17);
             this.label2.TabIndex = 2;
@@ -92,10 +93,11 @@
             // elsems
             // 
             this.elsems.AutoSize = true;
+            this.elsems.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.elsems.ForeColor = System.Drawing.Color.Red;
-            this.elsems.Location = new System.Drawing.Point(348, 313);
+            this.elsems.Location = new System.Drawing.Point(347, 310);
             this.elsems.Name = "elsems";
-            this.elsems.Size = new System.Drawing.Size(0, 13);
+            this.elsems.Size = new System.Drawing.Size(0, 17);
             this.elsems.TabIndex = 3;
             // 
             // Form1
@@ -114,6 +116,7 @@
             this.ForeColor = System.Drawing.Color.DarkRed;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

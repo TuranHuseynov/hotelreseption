@@ -53,40 +53,48 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnEmployer = new System.Windows.Forms.Button();
+            this.btnExpences = new System.Windows.Forms.Button();
+            this.btnGuest = new System.Windows.Forms.Button();
+            this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // addRoom
             // 
-            this.addRoom.Location = new System.Drawing.Point(12, 12);
+            this.addRoom.BackColor = System.Drawing.Color.SteelBlue;
+            this.addRoom.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.addRoom.Location = new System.Drawing.Point(556, 13);
             this.addRoom.Name = "addRoom";
             this.addRoom.Size = new System.Drawing.Size(75, 23);
             this.addRoom.TabIndex = 0;
             this.addRoom.Text = "Add Room";
-            this.addRoom.UseVisualStyleBackColor = true;
+            this.addRoom.UseVisualStyleBackColor = false;
             this.addRoom.Click += new System.EventHandler(this.addRoom_Click);
             // 
             // btnRoomDetails
             // 
-            this.btnRoomDetails.Location = new System.Drawing.Point(105, 12);
+            this.btnRoomDetails.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRoomDetails.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRoomDetails.Location = new System.Drawing.Point(659, 13);
             this.btnRoomDetails.Name = "btnRoomDetails";
             this.btnRoomDetails.Size = new System.Drawing.Size(75, 23);
             this.btnRoomDetails.TabIndex = 0;
             this.btnRoomDetails.Text = "Room Details";
-            this.btnRoomDetails.UseVisualStyleBackColor = true;
+            this.btnRoomDetails.UseVisualStyleBackColor = false;
             this.btnRoomDetails.Click += new System.EventHandler(this.btnRoomDetails_Click);
             // 
             // btnBooking
             // 
-            this.btnBooking.Location = new System.Drawing.Point(196, 12);
+            this.btnBooking.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnBooking.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBooking.Location = new System.Drawing.Point(556, 52);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(75, 23);
             this.btnBooking.TabIndex = 0;
             this.btnBooking.Text = "Booking";
-            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // roomNumber
@@ -209,7 +217,7 @@
             // 
             this.datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.datagrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.datagrid.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.datagrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.datagrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -221,9 +229,10 @@
             this.Column6,
             this.Column7,
             this.Column8});
+            this.datagrid.GridColor = System.Drawing.Color.CadetBlue;
             this.datagrid.Location = new System.Drawing.Point(12, 241);
             this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(722, 126);
+            this.datagrid.Size = new System.Drawing.Size(762, 126);
             this.datagrid.TabIndex = 5;
             // 
             // Column1
@@ -266,19 +275,45 @@
             this.Column8.HeaderText = "R.Status";
             this.Column8.Name = "Column8";
             // 
-            // roomBindingSource
-            // 
-            this.roomBindingSource.DataSource = typeof(HotelReseption.Room);
-            // 
             // btnEmployer
             // 
-            this.btnEmployer.Location = new System.Drawing.Point(297, 13);
+            this.btnEmployer.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnEmployer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEmployer.Location = new System.Drawing.Point(659, 52);
             this.btnEmployer.Name = "btnEmployer";
             this.btnEmployer.Size = new System.Drawing.Size(75, 23);
             this.btnEmployer.TabIndex = 6;
             this.btnEmployer.Text = "Employer";
-            this.btnEmployer.UseVisualStyleBackColor = true;
+            this.btnEmployer.UseVisualStyleBackColor = false;
             this.btnEmployer.Click += new System.EventHandler(this.btnEmployer_Click);
+            // 
+            // btnExpences
+            // 
+            this.btnExpences.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnExpences.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExpences.Location = new System.Drawing.Point(556, 87);
+            this.btnExpences.Name = "btnExpences";
+            this.btnExpences.Size = new System.Drawing.Size(75, 23);
+            this.btnExpences.TabIndex = 7;
+            this.btnExpences.Text = "Expence";
+            this.btnExpences.UseVisualStyleBackColor = false;
+            this.btnExpences.Click += new System.EventHandler(this.btnExpences_Click);
+            // 
+            // btnGuest
+            // 
+            this.btnGuest.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnGuest.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGuest.Location = new System.Drawing.Point(659, 87);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(75, 23);
+            this.btnGuest.TabIndex = 8;
+            this.btnGuest.Text = "Guest";
+            this.btnGuest.UseVisualStyleBackColor = false;
+            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
+            // 
+            // roomBindingSource
+            // 
+            this.roomBindingSource.DataSource = typeof(HotelReseption.Room);
             // 
             // Form2
             // 
@@ -286,6 +321,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(852, 379);
+            this.Controls.Add(this.btnGuest);
+            this.Controls.Add(this.btnExpences);
             this.Controls.Add(this.btnEmployer);
             this.Controls.Add(this.datagrid);
             this.Controls.Add(this.label4);
@@ -340,5 +377,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Button btnEmployer;
+        private System.Windows.Forms.Button btnExpences;
+        private System.Windows.Forms.Button btnGuest;
     }
 }

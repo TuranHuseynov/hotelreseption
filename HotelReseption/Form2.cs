@@ -78,13 +78,15 @@ namespace HotelReseption
         private void btnRoomDetails_Click(object sender, EventArgs e)
         {
             Form3 detail = new Form3();
-            detail.ShowDialog();
+            detail.Show();
+            
         }
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
             Form4 booking = new Form4();
             booking.ShowDialog();
+            
         }
 
 
@@ -93,6 +95,18 @@ namespace HotelReseption
             Form5 employer = new Form5();
             employer.ShowDialog();
 
+        }
+
+        private void btnExpences_Click(object sender, EventArgs e)
+        {
+            Form6 expences = new Form6();
+            expences.ShowDialog();
+        }
+
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+            Form7 guest = new Form7();
+            guest.ShowDialog();
         }
     }
     
